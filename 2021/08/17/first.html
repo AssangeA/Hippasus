@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>地图切换</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/cesium/1.83.0/Widgets/CesiumWidget/CesiumWidget.min.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .app {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/cesium/1.83.0/Cesium.js"></script>
 </head>
+
 <body>
-    Hi, this is first.html！
+    <div class="app" id="app">11</div>
+    <script>
+        let viewer = new Cesium.Viewer('app');
+        console.log(viewer)
+    </script>
 </body>
+
 </html>
